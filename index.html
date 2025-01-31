@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ピピカツ健康マイレージ</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/html5-qrcode/minified/html5-qrcode.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>ピピカツ健康マイレージスタンプ</h1>
+  </header>
+  <main>
+    <!-- ホーム画面 -->
+    <section id="home">
+      <h2>ようこそ！</h2>
+      <p>QRコードをスキャンしてスタンプを集めよう！</p>
+      <button id="start-scan">QRコードをスキャン</button>
+    </section>
+    <!-- スタンプ表示画面 -->
+    <section id="stamps" style="display: none;">
+      <h2>あなたのスタンプ</h2>
+      <ul id="stamp-list"></ul>
+    </section>
+    <!-- QRコードスキャン用のセクション -->
+<section id="qr-scanner" style="display: none;">
+    <h2>QRコードをスキャン</h2>
+    <div id="qr-reader" style="width: 300px; margin: auto;"></div>
+    <button id="stop-scan">スキャンを終了する</button>
+  </section>  
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
